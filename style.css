@@ -17,11 +17,11 @@ body{
 #content{
   margin: 0 auto;
   width: 960px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #main{
-  width: 400px;
+  width: 460px;
   padding: 10px;
   float: left;
   margin-right: 10px
@@ -36,20 +36,20 @@ body{
 
 #logo:hover{
   opacity:0.6 !important;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; 
-  filter:alpha(opacity=60) !important; 
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter:alpha(opacity=60) !important;
 }
 
 .title{
   border-bottom: 1px solid #E3E3E3;
   font-size: 1.3em;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 span{font-weight: bold;}
 
 #agenda{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #agenda p{
@@ -58,9 +58,9 @@ span{font-weight: bold;}
 }
 
 #social{
-  margin-top: 20px;
+  margin-top: 10px;
   float: left;
-  width: 510px;
+  width: 450px;
   padding: 10px;
   background-color: white;
   border-radius: 5px
