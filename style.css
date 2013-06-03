@@ -3,21 +3,22 @@
 *{
   margin: 0px;
   padding: 0px;
+  border: 0px
 }
 
 body{
-  background: url("bg.jpg") no-repeat fixed center center #82B2A2;
+  background: url("bg.jpg") no-repeat fixed top center #70a59f;
   color: white;
   font-family: 'Arvo', serif;
   font-size: 1em;
   line-height: 1.4;
-
 }
 
 #content{
   margin: 0 auto;
   width: 960px;
   margin-top: 20px;
+  margin-bottom: 50px
 }
 
 #main{
@@ -28,10 +29,8 @@ body{
 }
 
 #logo{
-  font-size: 4em;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 20px
 }
 
 #logo:hover{
@@ -71,12 +70,36 @@ span{font-weight: bold;}
 #local{
   padding: 10px;
   float: left;
-  width: 100%
+  width: 100%;
+  margin-bottom: 20px;
+
 }
 
 #map {
   border: 5px solid #FCFCFC;
   border-radius: 5px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
+/* APOIO */
+#apoio{
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+#logos{
+  padding: 10px;
+  background-image: url("white_bg.png");
+  border-radius: 5px;
+}
+
+#logos img{
+  margin-right: 10px;  
+  opacity: 0.8;  
+}
+
+#logos img:hover{
+  opacity: 1.0
+}
