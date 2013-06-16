@@ -96,10 +96,21 @@ span{font-weight: bold;}
 }
 
 #logos img{
-  margin-right: 10px;  
-  opacity: 0.8;  
+  margin-right: 10px;
+  opacity: 0.8;
 }
 
 #logos img:hover{
   opacity: 1.0
+}
+
+#videos {
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+#videos * {
+  margin-right: 17px;
 }
