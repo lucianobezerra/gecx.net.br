@@ -1,20 +1,35 @@
-<html>
-<head>
-  <title>Grupo Espírita Chico Xavier</title>
-  <meta http-equiv="Content-Type" content="text/html" charset="utf8" />
-  <meta name="description" content="espiritismo, chico xavier, iguatu, allan kardec">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-41812778-1']);
-    _gaq.push(['_trackPageview']);
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="espiritismo, chico xavier, iguatu, allan kardec">
+    <script type="text/javascript" src="javascript/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="javascript/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="javascript/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41812778-1']);
+      _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	  
+	  $(function($){
+		  $("a#foto_grande").fancybox({
+			overlayShow : false,
+			openEffect  : 'elastic',
+			closeEffect : 'elastic',
+			centerOnScroll: true,
+			titleShow : true,
+			title : "Entrega de Cestas Básicas"
+		  })
+ 	  })
+    </script>
+    <title>Grupo Espírita Chico Xavier</title>
 </head>
 <body>
   <div id="content">
@@ -38,6 +53,11 @@
       <iframe width="312" height="240" src="//www.youtube.com/embed/pCTV4JMFGq4" frameborder="0" allowfullscreen></iframe>
       <iframe width="312" height="240" src="//www.youtube.com/embed/8VFpb4zv7MY" frameborder="0" allowfullscreen></iframe>
     </div>
+	<div id="fotos">
+	  <a id="foto_grande" href="cesta_basica_set_2013/20130929_093428.jpg"><img src="cesta_basica_set_2013/20130929_093428.jpg" border="0" width="312" height="240" title="Click para ampliar" /></a>
+	  <a id="foto_grande" href="cesta_basica_set_2013/20130929_100535.jpg"><img src="cesta_basica_set_2013/20130929_100535.jpg" border="0" width="312" height="240" title="Click para ampliar" /></a>
+	  <a id="foto_grande" href="cesta_basica_set_2013/20130929_102219.jpg"><img src="cesta_basica_set_2013/20130929_102219.jpg" border="0" width="312" height="240" title="Click para ampliar" /></a>
+	</div>
     <div id="local">
       <h1 class="title">Localização:</h1>
       <p>Rua Vicente Bezerra da Costa, 438, São Sebastião</p>
@@ -55,7 +75,6 @@
         </iframe>
       </div>
     </div>
-
     <div id="apoio">
       <h1 class="title">Apoio:</h1>
       <div id="logos">
@@ -64,5 +83,6 @@
       </div>
     </div>
   </div>
+  <div id="foto_grande"></div>
 </body>
 </html>

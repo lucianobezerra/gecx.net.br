@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="javascript/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="javascript/fancybox/jquery.fancybox.pack.js"></script>
+  <script language="javascript">
+	function Resize(){
+		var ResizeH,ResizeW;
+		LargeurFenetre = document ['ImageAAfficher'].width + (2*parseInt(50));
+		HauteurFenetre = document ['ImageAAfficher'].height + (2*parseInt(50));
+				
+		var OffH, OffW;
+		if (document.all)
+		{
+			OffH = document.body.clientHeight;
+			OffW = document.body.clientWidth;
+		} else     {
+			OffW = innerWidth;
+			OffH = innerHeight;
+		}
+		
+		ResizeH = HauteurFenetre - OffH;
+		ResizeW = LargeurFenetre - OffW;
+			
+		window.resizeBy(ResizeW,ResizeH);
+	}
+  </script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="center" valign="middle"><img src='cesta_basica_set_2013/20130929_093428.jpg' name='ImageAAfficher' border="0" onload="Resize();"></td>
+    </tr>
+</table>
+</body>
+</html>
